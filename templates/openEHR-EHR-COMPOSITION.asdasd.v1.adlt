@@ -41,7 +41,11 @@ description
     >
 
 definition
-    COMPOSITION[id1.1]     -- Encounter
+    COMPOSITION[id1.1] matches {    -- Encounter
+        content matches {
+            use_archetype ACTION[id0.2, openEHR-EHR-ACTION.ovl-asdasd-imaging_exam-001.v1.0.0]
+        }
+    }
 
 terminology
     term_definitions = <
@@ -55,6 +59,54 @@ terminology
             ["id1.1"] = <
                 text = <"Encounter">
                 description = <"Generic encounter or progress note composition">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-ACTION.ovl-asdasd-imaging_exam-001.v1.0.0
+
+specialize
+    openEHR-EHR-ACTION.imaging_exam.v1.0.0
+
+definition
+    ACTION[id1.1] matches {    -- Imaging examination
+        ism_transition matches {
+            ISM_TRANSITION[id3.1] occurrences matches {0..1}     -- Examination planned
+            ISM_TRANSITION[id4.1] occurrences matches {0..1}     -- Examination requested
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Imaging examination">
+                description = <"Clinical activity about performing an imaging examination.">
+            >
+            ["id3.1"] = <
+                text = <"Examination planned">
+                description = <"Imaging examination is planned.">
+            >
+            ["id4.1"] = <
+                text = <"Examination requested">
+                description = <"Imaging examination has been requested.">
+            >
+        >
+        ["sl"] = <
+            ["id1.1"] = <
+                text = <"*Imaging examination(en)">
+                description = <"*Clinical activity about performing an imaging examination.(en)">
+            >
+            ["id3.1"] = <
+                text = <"*Examination planned(en)">
+                description = <"*Imaging examination is planned.(en)">
+            >
+            ["id4.1"] = <
+                text = <"*Examination requested(en)">
+                description = <"*Imaging examination has been requested.(en)">
             >
         >
     >
