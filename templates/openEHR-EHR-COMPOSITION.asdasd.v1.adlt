@@ -74,7 +74,13 @@ specialize
 definition
     ACTION[id1.1] matches {    -- Imaging examination
         ism_transition matches {
-            ISM_TRANSITION[id3.1] occurrences matches {0..1}     -- Examination planned
+            ISM_TRANSITION[id3.1] occurrences matches {0..1} matches {    -- Examination planned
+                careflow_step matches {
+                    DV_CODED_TEXT[id25.1] occurrences matches {0} matches {
+                        defining_code matches {[at3]}
+                    }
+                }
+            }
             ISM_TRANSITION[id4.1] occurrences matches {0..1}     -- Examination requested
         }
     }
