@@ -87,7 +87,13 @@ definition
                 }
             }
             ISM_TRANSITION[id4.1] occurrences matches {0..1}     -- Examination requested
-            ISM_TRANSITION[id10.1] occurrences matches {0..3}     -- Examination postponed
+            ISM_TRANSITION[id10.1] occurrences matches {0..3} matches {    -- Examination postponed
+                current_state matches {
+                    DV_CODED_TEXT[id28.1] occurrences matches {0..5} matches {
+                        defining_code matches {[at17]}
+                    }
+                }
+            }
         }
     }
 
