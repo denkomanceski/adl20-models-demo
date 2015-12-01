@@ -87,6 +87,7 @@ definition
                 }
             }
             ISM_TRANSITION[id4.1] occurrences matches {0..1}     -- Examination requested
+            ISM_TRANSITION[id10.1] occurrences matches {0..3}     -- Examination postponed
         }
     }
 
@@ -105,6 +106,10 @@ terminology
                 text = <"Examination requested">
                 description = <"Imaging examination has been requested.">
             >
+            ["id10.1"] = <
+                text = <"Examination postponed">
+                description = <"The examination has been postponed.">
+            >
         >
         ["sl"] = <
             ["id1.1"] = <
@@ -118,6 +123,10 @@ terminology
             ["id4.1"] = <
                 text = <"*Examination requested(en)">
                 description = <"*Imaging examination has been requested.(en)">
+            >
+            ["id10.1"] = <
+                text = <"*Examination postponed(en)">
+                description = <"*The examination has been postponed.(en)">
             >
         >
     >
