@@ -80,6 +80,11 @@ definition
                         defining_code matches {[at3]}
                     }
                 }
+                current_state matches {
+                    DV_CODED_TEXT[id24.1] occurrences matches {0} matches {
+                        defining_code matches {[at16]}
+                    }
+                }
             }
             ISM_TRANSITION[id4.1] occurrences matches {0..1}     -- Examination requested
         }
