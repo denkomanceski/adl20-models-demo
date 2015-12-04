@@ -217,6 +217,11 @@ definition
                             DV_DATE_TIME[id50] 
                         }
                     }
+                    ELEMENT[id52] matches {    -- test007
+                        value matches {
+                            DV_TEXT[id53] 
+                        }
+                    }
                 }
             }
         }
@@ -390,6 +395,10 @@ terminology
                 text = <"complete">
                 description = <"complete">
             >
+            ["id52"] = <
+                text = <"test007">
+                description = <"DV_TEXT">
+            >
         >
         ["sl"] = <
             ["id1"] = <
@@ -543,6 +552,10 @@ terminology
             ["at23"] = <
                 text = <"*complete (en)">
                 description = <"*complete (en)">
+            >
+            ["id52"] = <
+                text = <"DV_TEXT (en)">
+                description = <"DV_TEXT (en)">
             >
         >
     >
