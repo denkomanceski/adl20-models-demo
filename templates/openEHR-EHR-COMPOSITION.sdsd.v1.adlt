@@ -43,7 +43,8 @@ description
 definition
     COMPOSITION[id1.1] matches {    -- Encounter
         content matches {
-            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-sdsd-blood_pressure-001.v1.0.0]
+            use_archetype ACTION[id0.3, openEHR-EHR-ACTION.ovl-sdsd-imaging_exam-001.v1.0.0]
+            use_archetype ACTION[id0.3, openEHR-EHR-ACTION.ovl-sdsd-imaging_exam-002.v1.0.0]
         }
     }
 
@@ -66,50 +67,53 @@ terminology
 
 ---------------------------------------------------------------------------------
 template_overlay
-    openEHR-EHR-OBSERVATION.ovl-sdsd-blood_pressure-001.v1.0.0
+    openEHR-EHR-ACTION.ovl-sdsd-imaging_exam-001.v1.0.0
 
 specialize
-    openEHR-EHR-OBSERVATION.blood_pressure.v1.0.0
+    openEHR-EHR-ACTION.imaging_exam.v1.0.0
 
 definition
-    OBSERVATION[id1.1]     -- *Blood Pressure(en)
+    ACTION[id1.1]     -- Imaging examination
 
 terminology
     term_definitions = <
-        ["sl"] = <
-            ["id1.1"] = <
-                text = <"*Blood Pressure(en)">
-                description = <"*The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.(en)">
-            >
-        >
-        ["zh-cn"] = <
-            ["id1.1"] = <
-                text = <"*Blood Pressure(en)">
-                description = <"*The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.(en)">
-            >
-        >
-        ["de"] = <
-            ["id1.1"] = <
-                text = <"*Blood Pressure(en)">
-                description = <"*The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.(en)">
-            >
-        >
         ["en"] = <
             ["id1.1"] = <
-                text = <"Blood Pressure">
-                description = <"The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.">
+                text = <"Imaging examination">
+                description = <"Clinical activity about performing an imaging examination.">
             >
         >
-        ["ja"] = <
+        ["sl"] = <
             ["id1.1"] = <
-                text = <"*Blood Pressure(en)">
-                description = <"*The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.(en)">
+                text = <"*Imaging examination(en)">
+                description = <"*Clinical activity about performing an imaging examination.(en)">
             >
         >
-        ["nl"] = <
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-ACTION.ovl-sdsd-imaging_exam-002.v1.0.0
+
+specialize
+    openEHR-EHR-ACTION.imaging_exam.v1.0.0
+
+definition
+    ACTION[id1.1]     -- Imaging examination
+
+terminology
+    term_definitions = <
+        ["en"] = <
             ["id1.1"] = <
-                text = <"*Blood Pressure(en)">
-                description = <"*The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.(en)">
+                text = <"Imaging examination">
+                description = <"Clinical activity about performing an imaging examination.">
+            >
+        >
+        ["sl"] = <
+            ["id1.1"] = <
+                text = <"*Imaging examination(en)">
+                description = <"*Clinical activity about performing an imaging examination.(en)">
             >
         >
     >
