@@ -10,6 +10,6 @@
     "rmType" : "COMPOSITION",
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.sdsd.v1.adlt",
-    "sha" : "a26a7df59109018bd36482d643d93e5d13fe071d"
+    "sha" : "7a6baf18cbe0e3a429f25f011fef05377756a394"
   } ]
 }
