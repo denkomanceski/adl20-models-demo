@@ -7,13 +7,14 @@ language
         ["sl"] = <
             author = <
                 ["name"] = <"?">
+                ["asdasd"] = <"231">
             >
             language = <[ISO_639-1::sl]>
         >
     >
     
 description
-    copyright = <"Â© openEHR Foundation">
+    copyright = <"© openEHR Foundation">
     details = <
         ["en"] = <
             keywords = <"Radiology", "Ultrasound", "MRI", "CT", "scan", "tomography">
@@ -178,17 +179,17 @@ definition
         description matches {
             ITEM_TREE[id2] matches {
                 items matches {
-                    ELEMENT[id18] occurrences matches {0..1} matches {    -- Examination name
+                    ELEMENT[id18] matches {    -- Examination name
                         value matches {
                             DV_TEXT[id46] 
                         }
                     }
-                    ELEMENT[id19] occurrences matches {0..1} matches {    -- Description
+                    ELEMENT[id19] matches {    -- Description
                         value matches {
                             DV_TEXT[id47] 
                         }
                     }
-                    ELEMENT[id20] occurrences matches {0..1} matches {    -- Reason
+                    ELEMENT[id20] matches {    -- Reason
                         value matches {
                             DV_TEXT[id48] 
                         }
@@ -201,7 +202,7 @@ definition
                         include
                             archetype_id/value matches {/.*/}
                     }
-                    ELEMENT[id21] occurrences matches {0..1} matches {    -- Comment
+                    ELEMENT[id21] matches {    -- Comment
                         value matches {
                             DV_TEXT[id49] 
                         }
@@ -212,14 +213,9 @@ definition
         protocol matches {
             ITEM_TREE[id16] matches {
                 items matches {
-                    ELEMENT[id17] occurrences matches {0..1} matches {    -- Start date/time
+                    ELEMENT[id17] matches {    -- Start date/time
                         value matches {
                             DV_DATE_TIME[id50] 
-                        }
-                    }
-                    ELEMENT[id52] matches {    -- test007
-                        value matches {
-                            DV_TEXT[id53] 
                         }
                     }
                 }
@@ -395,10 +391,6 @@ terminology
                 text = <"complete">
                 description = <"complete">
             >
-            ["id52"] = <
-                text = <"test007">
-                description = <"DV_TEXT">
-            >
         >
         ["sl"] = <
             ["id1"] = <
@@ -552,10 +544,6 @@ terminology
             ["at23"] = <
                 text = <"*complete (en)">
                 description = <"*complete (en)">
-            >
-            ["id52"] = <
-                text = <"DV_TEXT (en)">
-                description = <"DV_TEXT (en)">
             >
         >
     >
