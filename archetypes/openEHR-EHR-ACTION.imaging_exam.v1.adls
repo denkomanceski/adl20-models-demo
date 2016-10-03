@@ -5,11 +5,15 @@ language
     original_language = <[ISO_639-1::en]>
     translations = <
         ["sl"] = <
+            accreditation = <"hehehe">
             author = <
                 ["name"] = <"?">
                 ["asdasd"] = <"231">
             >
             language = <[ISO_639-1::sl]>
+            other_details = <
+                ["heheh"] = <"heheehhe">
+            >
         >
     >
     
