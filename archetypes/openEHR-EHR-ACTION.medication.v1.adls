@@ -5,10 +5,14 @@ language
     original_language = <[ISO_639-1::en]>
     translations = <
         ["ar-sy"] = <
+            accreditation = <"heyhey">
             author = <
                 ["name"] = <"Mona Saleh">
             >
             language = <[ISO_639-1::ar-sy]>
+            other_details = <
+                ["hey"] = <"123">
+            >
         >
         ["es-ar"] = <
             author = <
@@ -385,7 +389,7 @@ definition
         description matches {
             ITEM_TREE[id18] matches {
                 items matches {
-                    ELEMENT[id21] occurrences matches {0..1} matches {    -- Medicine
+                    ELEMENT[id21] matches {    -- Medicine
                         value matches {
                             DV_TEXT[id96] 
                             DV_CODED_TEXT[id97] matches {
@@ -407,16 +411,16 @@ definition
                             DV_TEXT[id99] 
                         }
                     }
-                    allow_archetype CLUSTER[id23] occurrences matches {0..1} matches { 
+                    allow_archetype CLUSTER[id23] matches { 
                         include
                             archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_amount(-a-zA-Z0-9_]+)*\.v1/}
                     }
-                    ELEMENT[id25] occurrences matches {0..1} matches {    -- Comment
+                    ELEMENT[id25] matches {    -- Comment
                         value matches {
                             DV_TEXT[id100] 
                         }
                     }
-                    ELEMENT[id26] occurrences matches {0..1} matches {    -- Sequence number
+                    ELEMENT[id26] matches {    -- Sequence number
                         value matches {
                             DV_COUNT[id101] 
                         }
@@ -425,7 +429,7 @@ definition
                         include
                             archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_admin(-a-zA-Z0-9_]+)*\.v1/}
                     }
-                    ELEMENT[id37] occurrences matches {0..1} matches {    -- Brand substituted
+                    ELEMENT[id37] matches {    -- Brand substituted
                         value matches {
                             DV_BOOLEAN[id102] matches {
                                 value matches {True, False}
@@ -438,46 +442,46 @@ definition
         protocol matches {
             ITEM_TREE[id31] matches {
                 items cardinality matches {1..*; unordered} matches {
-                    ELEMENT[id27] occurrences matches {0..1} matches {    -- BatchID
+                    ELEMENT[id27] matches {    -- BatchID
                         value matches {
                             DV_TEXT[id103] 
                         }
                     }
-                    ELEMENT[id41] occurrences matches {0..1} matches {    -- Expiry date
+                    ELEMENT[id41] matches {    -- Expiry date
                         value matches {
                             DV_DATE[id104] 
                         }
                     }
-                    ELEMENT[id32] occurrences matches {0..1} matches {    -- Dispensed to
+                    ELEMENT[id32] matches {    -- Dispensed to
                         value matches {
                             DV_TEXT[id105] 
                         }
                     }
-                    ELEMENT[id38] occurrences matches {0..1} matches {    -- Number of times dispensed
+                    ELEMENT[id38] matches {    -- Number of times dispensed
                         value matches {
                             DV_COUNT[id106] 
                         }
                     }
-                    ELEMENT[id33] occurrences matches {0..1} matches {    -- Remaining repeats
+                    ELEMENT[id33] matches {    -- Remaining repeats
                         value matches {
                             DV_COUNT[id107] matches {
                                 magnitude matches {|>=0|}
                             }
                         }
                     }
-                    ELEMENT[id39] occurrences matches {0..1} matches {    -- Claim category
+                    ELEMENT[id39] matches {    -- Claim category
                         value matches {
                             DV_TEXT[id108] 
                         }
                     }
-                    ELEMENT[id49] occurrences matches {0..1} matches {    -- Self-administration type
+                    ELEMENT[id49] matches {    -- Self-administration type
                         value matches {
                             DV_CODED_TEXT[id109] matches {
                                 defining_code matches {[ac6]}
                             }
                         }
                     }
-                    ELEMENT[id44] occurrences matches {0..1} matches {    -- Scheduled action time
+                    ELEMENT[id44] matches {    -- Scheduled action time
                         value matches {
                             DV_DATE_TIME[id110] 
                         }
