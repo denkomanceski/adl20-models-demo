@@ -24,6 +24,12 @@ description
             keywords = <"Radiology", "Ultrasound", "MRI", "CT", "scan", "tomography">
             language = <[ISO_639-1::en]>
             misuse = <"">
+            original_resource_uri = <
+                ["asd"] = <"123">
+            >
+            other_details = <
+                ["cxv"] = <"123">
+            >
             purpose = <"To record activity regarding the performance of imaging examinations.">
             use = <"Use to record activity regarding the performance of imaging examinations.">
         >
