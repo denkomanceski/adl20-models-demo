@@ -27,9 +27,6 @@ description
             original_resource_uri = <
                 ["asd"] = <"123">
             >
-            other_details = <
-                ["cxv"] = <"123">
-            >
             purpose = <"To record activity regarding the performance of imaging examinations.">
             use = <"Use to record activity regarding the performance of imaging examinations.">
         >
@@ -402,6 +399,14 @@ terminology
                 text = <"complete">
                 description = <"complete">
             >
+            ["at24"] = <
+                text = <"qweqw">
+                description = <"weqwe">
+            >
+            ["ac1"] = <
+                text = <"heheh">
+                description = <"something">
+            >
         >
         ["sl"] = <
             ["id1"] = <
@@ -556,6 +561,20 @@ terminology
                 text = <"*complete (en)">
                 description = <"*complete (en)">
             >
+            ["at24"] = <
+                text = <"qweqw (en)">
+                description = <"weqwe (en)">
+            >
+            ["ac1"] = <
+                text = <"heheh (en)">
+                description = <"something (en)">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at24">
         >
     >
 
