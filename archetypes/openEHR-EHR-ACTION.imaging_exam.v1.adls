@@ -244,6 +244,10 @@ terminology
             ["id1"] = <"asd">
         
         >
+        ["asdasd"] = <
+            ["ac3"] = <"asdasd">
+        
+        >
     >
     term_definitions = <
         ["en"] = <
@@ -407,6 +411,18 @@ terminology
                 text = <"heheh">
                 description = <"something">
             >
+            ["at25"] = <
+                text = <"ddwdw">
+                description = <"dwdw">
+            >
+            ["ac2"] = <
+                text = <"xqxq">
+                description = <"xqxq">
+            >
+            ["ac3"] = <
+                text = <"asdas">
+                description = <"dasdasd">
+            >
         >
         ["sl"] = <
             ["id1"] = <
@@ -569,12 +585,28 @@ terminology
                 text = <"heheh (en)">
                 description = <"something (en)">
             >
+            ["at25"] = <
+                text = <"ddwdw (en)">
+                description = <"dwdw (en)">
+            >
+            ["ac2"] = <
+                text = <"xqxq (en)">
+                description = <"xqxq (en)">
+            >
+            ["ac3"] = <
+                text = <"asdas (en)">
+                description = <"dasdasd (en)">
+            >
         >
     >
     value_sets = <
         ["ac1"] = <
             id = <"ac1">
             members = <"at24">
+        >
+        ["ac2"] = <
+            id = <"ac2">
+            members = <"at25">
         >
     >
 
