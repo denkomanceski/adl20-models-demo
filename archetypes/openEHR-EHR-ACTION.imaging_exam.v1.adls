@@ -250,6 +250,10 @@ terminology
             ["id1"] = <"eee">
         
         >
+        ["qweqwe"] = <
+            ["ac4"] = <"qweqwe">
+        
+        >
     >
     term_definitions = <
         ["en"] = <
@@ -425,6 +429,10 @@ terminology
                 text = <"asdas">
                 description = <"dasdasd">
             >
+            ["ac4"] = <
+                text = <"asdasd">
+                description = <"asdasd">
+            >
         >
         ["sl"] = <
             ["id1"] = <
@@ -598,6 +606,10 @@ terminology
             ["ac3"] = <
                 text = <"asdas (en)">
                 description = <"dasdasd (en)">
+            >
+            ["ac4"] = <
+                text = <"asdasd (en)">
+                description = <"asdasd (en)">
             >
         >
     >
