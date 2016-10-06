@@ -433,6 +433,10 @@ terminology
                 text = <"asdasd">
                 description = <"asdasd">
             >
+            ["at26"] = <
+                text = <"dsdsff">
+                description = <"sdfsd">
+            >
         >
         ["sl"] = <
             ["id1"] = <
@@ -611,12 +615,16 @@ terminology
                 text = <"asdasd (en)">
                 description = <"asdasd (en)">
             >
+            ["at26"] = <
+                text = <"dsdsff (en)">
+                description = <"sdfsd (en)">
+            >
         >
     >
     value_sets = <
         ["ac1"] = <
             id = <"ac1">
-            members = <"at24">
+            members = <"at24", "at26">
         >
         ["ac2"] = <
             id = <"ac2">
