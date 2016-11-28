@@ -216,5 +216,12 @@
     "path" : "archetypes/openEHR-EHR-SECTION.medication.v1.adls",
     "sha" : "d379bcf36aa1293b122d305a3daa87b3647ada0f",
     "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.demo.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Demonstration",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.demo.v1.adls",
+    "sha" : "067ce69c009c5ad4e7cdf02e83b077849d9a7575",
+    "languages" : [ "en", "pt-br" ]
   } ]
 }
