@@ -5,30 +5,24 @@ language
     original_language = <[ISO_639-1::en]>
     translations = <
         ["pt-br"] = <
-            language = <[ISO_639-1::pt-br]>
             author = <
                 ["name"] = <"Jussara Rötzsch">
                 ["organisation"] = <"openEHR Foundation">
                 ["email"] = <"jussara.macedo@gmail.com">
             >
-            accreditation = <"MD. MSc., Pschyatrist, Clinical Modeller, Coordinator of  Standards and Semantic Interoperability of Brazil e-Health Initiative ">
         >
     >
 
 description
     lifecycle_state = <"unmanaged">
     original_author = <
+        ["date"] = <"2008-12-23">
         ["name"] = <"Heather Leslie">
         ["organisation"] = <"Ocean Informatics">
         ["email"] = <"heather.leslie@oceaninformatics.com">
-        ["date"] = <"2008-12-23">
     >
     copyright = <"© openEHR Foundation">
     other_contributors = <"Individual A, Argentina", "Individual B, Belgium", "Individual C, Canada (Editor)">
-    references = <
-        ["1"] = <"openEHR website:  http://www.openehr.org/home.html">
-        ["2"] = <"CKM:  http://www.openehr.org/knowledge/">
-    >
     details = <
         ["en"] = <
             language = <[ISO_639-1::en]>
@@ -44,10 +38,6 @@ description
             misuse = <"Não apropriado para carregar nenhum dado clínico real.">
             keywords = <"demonstração", "teste", "protótipo(s)", "tipo(s) de dado(s)", "estado", "protocolo(s)", "evento(s)", "dado(s)">
         >
-    >
-    other_details = <
-        ["current_contact"] = <"Heather Leslie, Ocean Informatics, heather.leslie@oceaninformatics.com">
-        ["MD5-CAM-1.0.1"] = <"AEA1AE0BC2466A2D122B5A13AC957AB3">
     >
 
 definition
@@ -291,400 +281,6 @@ definition
 
 terminology
     term_definitions = <
-        ["en"] = <
-            ["id1"] = <
-                text = <"Demonstration">
-                description = <"Demonstration archetype with descriptions and explanations.">
-            >
-            ["id3"] = <
-                text = <"Any Event">
-                description = <"All archetypes of the OBSERVATION class contain a HISTORY or EVENT model which contains information about the timing of the observation and the 'width' of the information - either a point in time or an interval.  The default is 'Any event' and it is not specified if this is a Point in time or an Interval.">
-            >
-            ["id5"] = <
-                text = <"Heading1">
-                description = <"This is a symbol for a cluster which can have other elements 'nested' within it.">
-            >
-            ["id6"] = <
-                text = <"Free Text or Coded">
-                description = <"Text data type in which free text can be entered or coding can be incorporated either in the template or at run time.">
-            >
-            ["id7"] = <
-                text = <"Text That Uses Internal Codes">
-                description = <"Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code.">
-            >
-            ["at8"] = <
-                text = <"Lying">
-                description = <"Patient is lying supine.">
-            >
-            ["at9"] = <
-                text = <"Reclining">
-                description = <"Patient is reclining, propped up on one medium pillow.">
-            >
-            ["at10"] = <
-                text = <"Sitting">
-                description = <"Patient is sitting on a chair.">
-            >
-            ["at11"] = <
-                text = <"Standing">
-                description = <"Patient is standing.">
-            >
-            ["id12"] = <
-                text = <"Text That is Sourced From an External Terminology">
-                description = <"Text data type utilising codes derived from an external terminology source eg a SNOMED-CT, LOINC or ICD subset.">
-            >
-            ["id13"] = <
-                text = <"Quantity">
-                description = <"A quantity data type used to record a measurement associated with its' appropriate units.  These are derived from ISO standards and the Reference model enables conversion between these units. The example shown here is length.">
-            >
-            ["id14"] = <
-                text = <"Count">
-                description = <"Count data types are composed of an integer with no units eg for recording the number of children - in this example the minimum is set at 0 and the maximum not specified.">
-            >
-            ["id15"] = <
-                text = <"Date/Time">
-                description = <"Date/Time datatype allows recording of a date and/or time, including partial dates such as year only or month and year only.  Allow all is the default - so all forms of date/time are permitted.">
-            >
-            ["id16"] = <
-                text = <"Ordinal">
-                description = <"Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score.">
-            >
-            ["id17"] = <
-                text = <"Boolean">
-                description = <"Boolean datatype that allows for true or false answers.">
-            >
-            ["id18"] = <
-                text = <"Any">
-                description = <"The datatype for this 'any' element can be specified or constrained in a template or at run-time, but is not explicitly modelled in the archetype.">
-            >
-            ["id19"] = <
-                text = <"Heading 2">
-                description = <"This is a symbol for a cluster which can have other elements 'nested' within it.">
-            >
-            ["id20"] = <
-                text = <"Slot To Contain Other Cluster Archetypes">
-                description = <"List of CLUSTER archetypes allowed to be included or excluded within this OBSERVATION archetype.">
-            >
-            ["id21"] = <
-                text = <"Slot To Contain Other Element Archetypes">
-                description = <"List of ELEMENT archetypes allowed to be included or excluded within this OBSERVATION archetype.">
-            >
-            ["id22"] = <
-                text = <"Duration">
-                description = <"Duration datatype allows recording of the duration of clinical concepts.  'Allow all time units' is the default, although specific time units can be explicitly modelled.  Maximum and minum values can be set for each time unit.">
-            >
-            ["id23"] = <
-                text = <"Interval of Integer">
-                description = <"Interval of integer datatype allows for recording of a range of counts eg 1-2 tablets prescribed.  Maximum and minimum values can be set for the lower count and the upper count.">
-            >
-            ["id24"] = <
-                text = <"Interval of Quantity">
-                description = <"Interval of quantity datatypes allow for the recording of a range of measurements in association with appropriate units eg 1-2cm (prescribed amount of cream for a rash).">
-            >
-            ["id25"] = <
-                text = <"Interval of Date">
-                description = <"Interval of integer datatype allows for recording of a range of dates eg between September 1, 2008 and September 8, 2008.">
-            >
-            ["id26"] = <
-                text = <"Choice">
-                description = <"Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element.">
-            >
-            ["id27"] = <
-                text = <"Multimedia">
-                description = <"Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example.">
-            >
-            ["id28"] = <
-                text = <"URI - resource identifier">
-                description = <"URI datatypes allow for recording of relationships from this data to data recorded elsewhere.  These links can be within the same EHR, or external eg to a  URL.">
-            >
-            ["id29"] = <
-                text = <"Proportion">
-                description = <"Proportion datatypes allow for ratios, percent, fractions and proportions to be modelled.">
-            >
-            ["id32"] = <
-                text = <"State - Definition">
-                description = <"All archetypes of the OBSERVATION class can  contain a STATE model which contains information about the subject of data at the time the information was collected, and this information is required for safe clinical interpretation of the core information. An example is the position of the patient at the time of measuring a blood pressure.  Datatypes are identical to those explained in the Data model, above.">
-            >
-            ["id33"] = <
-                text = <"Data - Definition">
-                description = <"All archetypes of the OBSERVATION class contain a DATA model  which contains the core information e.g. the systolic and diastolic pressures when measuring a blood pressure.">
-            >
-            ["id34"] = <
-                text = <"Named Point In Time">
-                description = <"An event that is both named (eg Birth) and constrained as a Point in time event records the data elements in relation to a specified point in time eg Weight at Birth.">
-            >
-            ["id35"] = <
-                text = <"Named Interval">
-                description = <"An event that is both named and constrained as an Interval event records the data elements in relation to a period of time eg Weight Loss over time.  The interval can be fixed or left unspecified.  In addition there are mathematical functions that can be specified to capture concepts such as change, decrease, increase, maximum, minimum, mean etc.">
-            >
-            ["id36"] = <
-                text = <"Offset Point In Time">
-                description = <"Offset Point in time records data at a point in time with a fixed offset of 5 minutes from another specified event eg recording a 2 minute Apgar reading at 2 minutes offset from Birth.">
-            >
-            ["id38"] = <
-                text = <"Protocol - Definition">
-                description = <"All archetypes of the OBSERVATION class can contain a PROTOCOL model which records information on how the information was gathered or measured, and any other information that is not required for safe clinical interpretation of the core Data. Datatypes are identical to those explained in the Data model, above.">
-            >
-            ["at39"] = <
-                text = <"No pain">
-                description = <"No pain at all.">
-            >
-            ["at40"] = <
-                text = <"Slight pain">
-                description = <"Pain level rated as 1 out of a possible maximum score of 10.">
-            >
-            ["at41"] = <
-                text = <"Mild pain">
-                description = <"Pain level rated as 2 out of a possible maximum score of 10.">
-            >
-            ["at42"] = <
-                text = <"Moderate pain">
-                description = <"Pain level rated as 5 out of a possible maximum score of 10.">
-            >
-            ["at43"] = <
-                text = <"Severe pain">
-                description = <"Pain level rated as 9 out of a possible maximum score of 10.">
-            >
-            ["at44"] = <
-                text = <"Most severe pain imaginable">
-                description = <"Pain level rated as 10 out of a possible maximum score of 10.">
-            >
-            ["id45"] = <
-                text = <"Identifier">
-                description = <"Identifier datatypes enable recording of formal data identifiers.">
-            >
-            ["ac2"] = <
-                text = <"SubsetA">
-                description = <"Terminology subset derived from XXX">
-            >
-            ["ac4"] = <
-                text = <"SubsetB">
-                description = <"XYZ codes from Terminology 123">
-            >
-            ["at45"] = <
-                text = <"Length">
-                description = <"Length">
-            >
-            ["at46"] = <
-                text = <"Mass">
-                description = <"Mass">
-            >
-            ["at47"] = <
-                text = <"change">
-                description = <"change">
-            >
-            ["at48"] = <
-                text = <"no information">
-                description = <"no information">
-            >
-            ["at49"] = <
-                text = <"masked">
-                description = <"masked">
-            >
-            ["at50"] = <
-                text = <"not applicable">
-                description = <"not applicable">
-            >
-            ["at51"] = <
-                text = <"unknown">
-                description = <"unknown">
-            >
-            ["at52"] = <
-                text = <"audio/DVI4">
-                description = <"audio/DVI4">
-            >
-            ["at53"] = <
-                text = <"audio/G722">
-                description = <"audio/G722">
-            >
-            ["at54"] = <
-                text = <"audio/G723">
-                description = <"audio/G723">
-            >
-            ["at55"] = <
-                text = <"audio/G726-16">
-                description = <"audio/G726-16">
-            >
-            ["at56"] = <
-                text = <"audio/G726-24">
-                description = <"audio/G726-24">
-            >
-            ["at57"] = <
-                text = <"audio/G726-32">
-                description = <"audio/G726-32">
-            >
-            ["at58"] = <
-                text = <"audio/G726-40">
-                description = <"audio/G726-40">
-            >
-            ["at59"] = <
-                text = <"audio/G728">
-                description = <"audio/G728">
-            >
-            ["at60"] = <
-                text = <"audio/L8">
-                description = <"audio/L8">
-            >
-            ["at61"] = <
-                text = <"audio/L16">
-                description = <"audio/L16">
-            >
-            ["at62"] = <
-                text = <"audio/LPC">
-                description = <"audio/LPC">
-            >
-            ["at63"] = <
-                text = <"audio/G729">
-                description = <"audio/G729">
-            >
-            ["at64"] = <
-                text = <"audio/G729D">
-                description = <"audio/G729D">
-            >
-            ["at65"] = <
-                text = <"audio/G729E">
-                description = <"audio/G729E">
-            >
-            ["at66"] = <
-                text = <"audio/mpeg">
-                description = <"audio/mpeg">
-            >
-            ["at67"] = <
-                text = <"audio/mpeg4-generic">
-                description = <"audio/mpeg4-generic">
-            >
-            ["at68"] = <
-                text = <"audio/L20">
-                description = <"audio/L20">
-            >
-            ["at69"] = <
-                text = <"audio/L24">
-                description = <"audio/L24">
-            >
-            ["at70"] = <
-                text = <"audio/telephone-event">
-                description = <"audio/telephone-event">
-            >
-            ["at71"] = <
-                text = <"image/cgm">
-                description = <"image/cgm">
-            >
-            ["at72"] = <
-                text = <"image/gif">
-                description = <"image/gif">
-            >
-            ["at73"] = <
-                text = <"image/png">
-                description = <"image/png">
-            >
-            ["at74"] = <
-                text = <"image/tiff">
-                description = <"image/tiff">
-            >
-            ["at75"] = <
-                text = <"image/jpeg">
-                description = <"image/jpeg">
-            >
-            ["at76"] = <
-                text = <"text/calendar">
-                description = <"text/calendar">
-            >
-            ["at77"] = <
-                text = <"text/directory">
-                description = <"text/directory">
-            >
-            ["at78"] = <
-                text = <"text/html">
-                description = <"text/html">
-            >
-            ["at79"] = <
-                text = <"text/plain">
-                description = <"text/plain">
-            >
-            ["at80"] = <
-                text = <"text/rtf">
-                description = <"text/rtf">
-            >
-            ["at81"] = <
-                text = <"text/sgml">
-                description = <"text/sgml">
-            >
-            ["at82"] = <
-                text = <"text/tab-separated-values">
-                description = <"text/tab-separated-values">
-            >
-            ["at83"] = <
-                text = <"text/uri-list">
-                description = <"text/uri-list">
-            >
-            ["at84"] = <
-                text = <"text/xml">
-                description = <"text/xml">
-            >
-            ["at85"] = <
-                text = <"text/xml-external-parsed-entity">
-                description = <"text/xml-external-parsed-entity">
-            >
-            ["at86"] = <
-                text = <"video/BT656">
-                description = <"video/BT656">
-            >
-            ["at87"] = <
-                text = <"video/CelB">
-                description = <"video/CelB">
-            >
-            ["at88"] = <
-                text = <"video/H261">
-                description = <"video/H261">
-            >
-            ["at89"] = <
-                text = <"video/H263">
-                description = <"video/H263">
-            >
-            ["at90"] = <
-                text = <"video/H263-1998">
-                description = <"video/H263-1998">
-            >
-            ["at91"] = <
-                text = <"video/H263-2000">
-                description = <"video/H263-2000">
-            >
-            ["at92"] = <
-                text = <"video/quicktime">
-                description = <"video/quicktime">
-            >
-            ["at93"] = <
-                text = <"application/msword">
-                description = <"application/msword">
-            >
-            ["at94"] = <
-                text = <"application/pdf">
-                description = <"application/pdf">
-            >
-            ["at95"] = <
-                text = <"application/rtf">
-                description = <"application/rtf">
-            >
-            ["at96"] = <
-                text = <"application/dicom">
-                description = <"application/dicom">
-            >
-            ["ac5"] = <
-                text = <"Text That Uses Internal Codes (synthesised)">
-                description = <"Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code. (synthesised)">
-            >
-            ["ac6"] = <
-                text = <"Boolean (synthesised)">
-                description = <"Boolean datatype that allows for true or false answers. (synthesised)">
-            >
-            ["ac7"] = <
-                text = <"Multimedia (synthesised)">
-                description = <"Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example. (synthesised)">
-            >
-            ["ac8"] = <
-                text = <"Ordinal (synthesised)">
-                description = <"Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score. (synthesised)">
-            >
-        >
         ["pt-br"] = <
             ["id1"] = <
                 text = <"Demonstração">
@@ -1079,6 +675,400 @@ terminology
                 description = <"Tipos de dados Ordinal pareiam um número e texto- deste modo  pode ser calculada uma pontuação pela  aplicação a progressão ser avaliada, como por exemplo se está se utilizando de uma escala de avaliação de dor. (synthesised)">
             >
         >
+        ["en"] = <
+            ["id1"] = <
+                text = <"Demonstration">
+                description = <"Demonstration archetype with descriptions and explanations.">
+            >
+            ["id3"] = <
+                text = <"Any Event">
+                description = <"All archetypes of the OBSERVATION class contain a HISTORY or EVENT model which contains information about the timing of the observation and the 'width' of the information - either a point in time or an interval.  The default is 'Any event' and it is not specified if this is a Point in time or an Interval.">
+            >
+            ["id5"] = <
+                text = <"Heading1">
+                description = <"This is a symbol for a cluster which can have other elements 'nested' within it.">
+            >
+            ["id6"] = <
+                text = <"Free Text or Coded">
+                description = <"Text data type in which free text can be entered or coding can be incorporated either in the template or at run time.">
+            >
+            ["id7"] = <
+                text = <"Text That Uses Internal Codes">
+                description = <"Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code.">
+            >
+            ["at8"] = <
+                text = <"Lying">
+                description = <"Patient is lying supine.">
+            >
+            ["at9"] = <
+                text = <"Reclining">
+                description = <"Patient is reclining, propped up on one medium pillow.">
+            >
+            ["at10"] = <
+                text = <"Sitting">
+                description = <"Patient is sitting on a chair.">
+            >
+            ["at11"] = <
+                text = <"Standing">
+                description = <"Patient is standing.">
+            >
+            ["id12"] = <
+                text = <"Text That is Sourced From an External Terminology">
+                description = <"Text data type utilising codes derived from an external terminology source eg a SNOMED-CT, LOINC or ICD subset.">
+            >
+            ["id13"] = <
+                text = <"Quantity">
+                description = <"A quantity data type used to record a measurement associated with its' appropriate units.  These are derived from ISO standards and the Reference model enables conversion between these units. The example shown here is length.">
+            >
+            ["id14"] = <
+                text = <"Count">
+                description = <"Count data types are composed of an integer with no units eg for recording the number of children - in this example the minimum is set at 0 and the maximum not specified.">
+            >
+            ["id15"] = <
+                text = <"Date/Time">
+                description = <"Date/Time datatype allows recording of a date and/or time, including partial dates such as year only or month and year only.  Allow all is the default - so all forms of date/time are permitted.">
+            >
+            ["id16"] = <
+                text = <"Ordinal">
+                description = <"Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score.">
+            >
+            ["id17"] = <
+                text = <"Boolean">
+                description = <"Boolean datatype that allows for true or false answers.">
+            >
+            ["id18"] = <
+                text = <"Any">
+                description = <"The datatype for this 'any' element can be specified or constrained in a template or at run-time, but is not explicitly modelled in the archetype.">
+            >
+            ["id19"] = <
+                text = <"Heading 2">
+                description = <"This is a symbol for a cluster which can have other elements 'nested' within it.">
+            >
+            ["id20"] = <
+                text = <"Slot To Contain Other Cluster Archetypes">
+                description = <"List of CLUSTER archetypes allowed to be included or excluded within this OBSERVATION archetype.">
+            >
+            ["id21"] = <
+                text = <"Slot To Contain Other Element Archetypes">
+                description = <"List of ELEMENT archetypes allowed to be included or excluded within this OBSERVATION archetype.">
+            >
+            ["id22"] = <
+                text = <"Duration">
+                description = <"Duration datatype allows recording of the duration of clinical concepts.  'Allow all time units' is the default, although specific time units can be explicitly modelled.  Maximum and minum values can be set for each time unit.">
+            >
+            ["id23"] = <
+                text = <"Interval of Integer">
+                description = <"Interval of integer datatype allows for recording of a range of counts eg 1-2 tablets prescribed.  Maximum and minimum values can be set for the lower count and the upper count.">
+            >
+            ["id24"] = <
+                text = <"Interval of Quantity">
+                description = <"Interval of quantity datatypes allow for the recording of a range of measurements in association with appropriate units eg 1-2cm (prescribed amount of cream for a rash).">
+            >
+            ["id25"] = <
+                text = <"Interval of Date">
+                description = <"Interval of integer datatype allows for recording of a range of dates eg between September 1, 2008 and September 8, 2008.">
+            >
+            ["id26"] = <
+                text = <"Choice">
+                description = <"Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element.">
+            >
+            ["id27"] = <
+                text = <"Multimedia">
+                description = <"Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example.">
+            >
+            ["id28"] = <
+                text = <"URI - resource identifier">
+                description = <"URI datatypes allow for recording of relationships from this data to data recorded elsewhere.  These links can be within the same EHR, or external eg to a  URL.">
+            >
+            ["id29"] = <
+                text = <"Proportion">
+                description = <"Proportion datatypes allow for ratios, percent, fractions and proportions to be modelled.">
+            >
+            ["id32"] = <
+                text = <"State - Definition">
+                description = <"All archetypes of the OBSERVATION class can  contain a STATE model which contains information about the subject of data at the time the information was collected, and this information is required for safe clinical interpretation of the core information. An example is the position of the patient at the time of measuring a blood pressure.  Datatypes are identical to those explained in the Data model, above.">
+            >
+            ["id33"] = <
+                text = <"Data - Definition">
+                description = <"All archetypes of the OBSERVATION class contain a DATA model  which contains the core information e.g. the systolic and diastolic pressures when measuring a blood pressure.">
+            >
+            ["id34"] = <
+                text = <"Named Point In Time">
+                description = <"An event that is both named (eg Birth) and constrained as a Point in time event records the data elements in relation to a specified point in time eg Weight at Birth.">
+            >
+            ["id35"] = <
+                text = <"Named Interval">
+                description = <"An event that is both named and constrained as an Interval event records the data elements in relation to a period of time eg Weight Loss over time.  The interval can be fixed or left unspecified.  In addition there are mathematical functions that can be specified to capture concepts such as change, decrease, increase, maximum, minimum, mean etc.">
+            >
+            ["id36"] = <
+                text = <"Offset Point In Time">
+                description = <"Offset Point in time records data at a point in time with a fixed offset of 5 minutes from another specified event eg recording a 2 minute Apgar reading at 2 minutes offset from Birth.">
+            >
+            ["id38"] = <
+                text = <"Protocol - Definition">
+                description = <"All archetypes of the OBSERVATION class can contain a PROTOCOL model which records information on how the information was gathered or measured, and any other information that is not required for safe clinical interpretation of the core Data. Datatypes are identical to those explained in the Data model, above.">
+            >
+            ["at39"] = <
+                text = <"No pain">
+                description = <"No pain at all.">
+            >
+            ["at40"] = <
+                text = <"Slight pain">
+                description = <"Pain level rated as 1 out of a possible maximum score of 10.">
+            >
+            ["at41"] = <
+                text = <"Mild pain">
+                description = <"Pain level rated as 2 out of a possible maximum score of 10.">
+            >
+            ["at42"] = <
+                text = <"Moderate pain">
+                description = <"Pain level rated as 5 out of a possible maximum score of 10.">
+            >
+            ["at43"] = <
+                text = <"Severe pain">
+                description = <"Pain level rated as 9 out of a possible maximum score of 10.">
+            >
+            ["at44"] = <
+                text = <"Most severe pain imaginable">
+                description = <"Pain level rated as 10 out of a possible maximum score of 10.">
+            >
+            ["id45"] = <
+                text = <"Identifier">
+                description = <"Identifier datatypes enable recording of formal data identifiers.">
+            >
+            ["ac2"] = <
+                text = <"SubsetA">
+                description = <"Terminology subset derived from XXX">
+            >
+            ["ac4"] = <
+                text = <"SubsetB">
+                description = <"XYZ codes from Terminology 123">
+            >
+            ["at45"] = <
+                text = <"Length">
+                description = <"Length">
+            >
+            ["at46"] = <
+                text = <"Mass">
+                description = <"Mass">
+            >
+            ["at47"] = <
+                text = <"change">
+                description = <"change">
+            >
+            ["at48"] = <
+                text = <"no information">
+                description = <"no information">
+            >
+            ["at49"] = <
+                text = <"masked">
+                description = <"masked">
+            >
+            ["at50"] = <
+                text = <"not applicable">
+                description = <"not applicable">
+            >
+            ["at51"] = <
+                text = <"unknown">
+                description = <"unknown">
+            >
+            ["at52"] = <
+                text = <"audio/DVI4">
+                description = <"audio/DVI4">
+            >
+            ["at53"] = <
+                text = <"audio/G722">
+                description = <"audio/G722">
+            >
+            ["at54"] = <
+                text = <"audio/G723">
+                description = <"audio/G723">
+            >
+            ["at55"] = <
+                text = <"audio/G726-16">
+                description = <"audio/G726-16">
+            >
+            ["at56"] = <
+                text = <"audio/G726-24">
+                description = <"audio/G726-24">
+            >
+            ["at57"] = <
+                text = <"audio/G726-32">
+                description = <"audio/G726-32">
+            >
+            ["at58"] = <
+                text = <"audio/G726-40">
+                description = <"audio/G726-40">
+            >
+            ["at59"] = <
+                text = <"audio/G728">
+                description = <"audio/G728">
+            >
+            ["at60"] = <
+                text = <"audio/L8">
+                description = <"audio/L8">
+            >
+            ["at61"] = <
+                text = <"audio/L16">
+                description = <"audio/L16">
+            >
+            ["at62"] = <
+                text = <"audio/LPC">
+                description = <"audio/LPC">
+            >
+            ["at63"] = <
+                text = <"audio/G729">
+                description = <"audio/G729">
+            >
+            ["at64"] = <
+                text = <"audio/G729D">
+                description = <"audio/G729D">
+            >
+            ["at65"] = <
+                text = <"audio/G729E">
+                description = <"audio/G729E">
+            >
+            ["at66"] = <
+                text = <"audio/mpeg">
+                description = <"audio/mpeg">
+            >
+            ["at67"] = <
+                text = <"audio/mpeg4-generic">
+                description = <"audio/mpeg4-generic">
+            >
+            ["at68"] = <
+                text = <"audio/L20">
+                description = <"audio/L20">
+            >
+            ["at69"] = <
+                text = <"audio/L24">
+                description = <"audio/L24">
+            >
+            ["at70"] = <
+                text = <"audio/telephone-event">
+                description = <"audio/telephone-event">
+            >
+            ["at71"] = <
+                text = <"image/cgm">
+                description = <"image/cgm">
+            >
+            ["at72"] = <
+                text = <"image/gif">
+                description = <"image/gif">
+            >
+            ["at73"] = <
+                text = <"image/png">
+                description = <"image/png">
+            >
+            ["at74"] = <
+                text = <"image/tiff">
+                description = <"image/tiff">
+            >
+            ["at75"] = <
+                text = <"image/jpeg">
+                description = <"image/jpeg">
+            >
+            ["at76"] = <
+                text = <"text/calendar">
+                description = <"text/calendar">
+            >
+            ["at77"] = <
+                text = <"text/directory">
+                description = <"text/directory">
+            >
+            ["at78"] = <
+                text = <"text/html">
+                description = <"text/html">
+            >
+            ["at79"] = <
+                text = <"text/plain">
+                description = <"text/plain">
+            >
+            ["at80"] = <
+                text = <"text/rtf">
+                description = <"text/rtf">
+            >
+            ["at81"] = <
+                text = <"text/sgml">
+                description = <"text/sgml">
+            >
+            ["at82"] = <
+                text = <"text/tab-separated-values">
+                description = <"text/tab-separated-values">
+            >
+            ["at83"] = <
+                text = <"text/uri-list">
+                description = <"text/uri-list">
+            >
+            ["at84"] = <
+                text = <"text/xml">
+                description = <"text/xml">
+            >
+            ["at85"] = <
+                text = <"text/xml-external-parsed-entity">
+                description = <"text/xml-external-parsed-entity">
+            >
+            ["at86"] = <
+                text = <"video/BT656">
+                description = <"video/BT656">
+            >
+            ["at87"] = <
+                text = <"video/CelB">
+                description = <"video/CelB">
+            >
+            ["at88"] = <
+                text = <"video/H261">
+                description = <"video/H261">
+            >
+            ["at89"] = <
+                text = <"video/H263">
+                description = <"video/H263">
+            >
+            ["at90"] = <
+                text = <"video/H263-1998">
+                description = <"video/H263-1998">
+            >
+            ["at91"] = <
+                text = <"video/H263-2000">
+                description = <"video/H263-2000">
+            >
+            ["at92"] = <
+                text = <"video/quicktime">
+                description = <"video/quicktime">
+            >
+            ["at93"] = <
+                text = <"application/msword">
+                description = <"application/msword">
+            >
+            ["at94"] = <
+                text = <"application/pdf">
+                description = <"application/pdf">
+            >
+            ["at95"] = <
+                text = <"application/rtf">
+                description = <"application/rtf">
+            >
+            ["at96"] = <
+                text = <"application/dicom">
+                description = <"application/dicom">
+            >
+            ["ac5"] = <
+                text = <"Text That Uses Internal Codes (synthesised)">
+                description = <"Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code. (synthesised)">
+            >
+            ["ac6"] = <
+                text = <"Boolean (synthesised)">
+                description = <"Boolean datatype that allows for true or false answers. (synthesised)">
+            >
+            ["ac7"] = <
+                text = <"Multimedia (synthesised)">
+                description = <"Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example. (synthesised)">
+            >
+            ["ac8"] = <
+                text = <"Ordinal (synthesised)">
+                description = <"Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score. (synthesised)">
+            >
+        >
     >
     term_bindings = <
         ["openehr"] = <
@@ -1134,23 +1124,5 @@ terminology
             ["at94"] = <http://openehr.org/id/518>
             ["at95"] = <http://openehr.org/id/519>
             ["at96"] = <http://openehr.org/id/637>
-        >
-    >
-    value_sets = <
-        ["ac5"] = <
-            id = <"ac5">
-            members = <"at8", "at9", "at10", "at11">
-        >
-        ["ac6"] = <
-            id = <"ac6">
-            members = <"at48", "at49", "at50", "at51">
-        >
-        ["ac7"] = <
-            id = <"ac7">
-            members = <"at52", "at53", "at54", "at55", "at56", "at57", "at58", "at59", "at60", "at61", "at62", "at63", "at64", "at65", "at66", "at67", "at68", "at69", "at70", "at71", "at72", "at73", "at74", "at75", "at76", "at77", "at78", "at79", "at80", "at81", "at82", "at83", "at84", "at85", "at86", "at87", "at88", "at89", "at90", "at91", "at92", "at93", "at94", "at95", "at96">
-        >
-        ["ac8"] = <
-            id = <"ac8">
-            members = <"at39", "at40", "at41", "at42", "at43", "at44">
         >
     >
